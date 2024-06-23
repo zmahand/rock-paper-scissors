@@ -24,14 +24,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-// function getHumanChoice () {
-//    humanChoice = prompt('Enter your choice. Rock, paper, or scissors.');
-//    humanChoice = humanChoice.toLowerCase();
-//    return humanChoice;
-// }
-
-
-
 function playGame() {
     function playRound() {
         computerSelection = getComputerChoice()
@@ -89,17 +81,6 @@ function playGame() {
         humanChoice = 'scissors';
         playRound();
     });
-
-    
-    // removed logic that tells the game to play 5 rounds
-    // for (let i = 0; i < 5; i++) {
-    //     humanSelection = getHumanChoice()
-    //     computerSelection = getComputerChoice()
-
-    //     playRound(computerSelection, humanSelection);
-    // }
-
-    //console.log('Human scored ' + humanScore + ". Computer scored " + computerScore);
 }
 
 playGame();
